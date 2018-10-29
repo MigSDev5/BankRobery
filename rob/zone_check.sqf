@@ -1,4 +1,4 @@
-private [_bankLoc];
+private ["_meters","_debugBank","_robComplete"];
 
 _meters = player distance [7014.4897, 7645.3999, 1.6962879];
 
