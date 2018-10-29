@@ -1,5 +1,5 @@
 private ["_silver","_silver10oz","_gold","_gold10oz","_briefcase","_loot","_robbing"];
-_AI = "scripts\rob\ai.sqf";
+_AI = "rob\ai.sqf";
 // Checks if script is active, thanks Halvhjearne <3
 if(isNil "script_in_progress")then{
         script_in_progress = false;
@@ -11,7 +11,7 @@ if(script_in_progress)exitwith{
 script_in_progress = true;
 // End Checks if Script is active
 
-	execVM "scripts\rob\zone_check.sqf";
+	execVM "rob\zone_check.sqf";
 
 cutText [format["You are about to attempt to rob the bank."], "PLAIN DOWN"];
 sleep 5;
