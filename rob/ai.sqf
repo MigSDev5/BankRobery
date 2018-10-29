@@ -4,7 +4,7 @@
 
 private ["_squad1","_squad2","_squad3","_squad4","_squad5","_squad6","_squad7","_squad8","_squad9","_squad10","_squad11","_squad12","_squad13","_squad14","_squad15","_squad16","_squad17","_squad18","_squad19","_squad20","_squad21","_squad22","_squad23","_squad24","_squad25","_squadDriver","_squadGunner"];
 
-execVM "scripts\rob\bank_config.sqf";
+execVM "rob\bank_config.sqf";
 sleep 0.5;
 
 if(_debugBank == 1) then {
@@ -12,7 +12,7 @@ if(_debugBank == 1) then {
 };
 
 if (_suv_enabled == 1) then {
-	execVM "scripts\rob\ai_suv.sqf";
+	execVM "rob\ai_suv.sqf";
 };
 
 //Init (create center etc)
