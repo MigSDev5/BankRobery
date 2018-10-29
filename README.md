@@ -14,10 +14,12 @@ This is the original version created by Darihon.
     _bankrobbery = cursorTarget isKindOf "Notebook";
     if ((speed player <= 1) && _bankrobbery && (player distance cursorTarget < 5)) then {
         if (s_player_bankrob < 0) then {
-            s_player_bankrob = player addAction ["Rob the bank","scripts\rob\robbank.sqf",cursorTarget, 0, false, true, "",""];
+            s_player_bankrob = player addAction ["Rob the bank","rob\robbank.sqf",cursorTarget, 0, false, true, "",""];
         };
     } else {
        
         player removeAction s_player_bankrob;
 		s_player_bankrob = -1;
     };
+    
+ Done
