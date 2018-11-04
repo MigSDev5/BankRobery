@@ -4,21 +4,20 @@
 
 private ["_squad1","_squad2","_squad3","_squad4","_squad5","_squad6","_squad7","_squad8","_squad9","_squad10","_squad11","_squad12","_squad13","_squad14","_squad15","_squad16","_squad17","_squad18","_squad19","_squad20","_squad21","_squad22","_squad23","_squad24","_squad25","_squadDriver","_squadGunner"];
 
-execVM "rob\bank_config.sqf";
 sleep 0.5;
 
 if(_debugBank == 1) then {
 	systemChat "[DEBUG] AI successfully executed.";
 };
 
-if (_suv_enabled == 1) then {
+if (suv_enabled) then {
 	execVM "rob\ai_suv.sqf";
 };
 
 //Init (create center etc)
 _CENTER = createCenter east; //Creates Center.
 _aiGroup = createGroup east; //Creates a Group.
-EAST setFriend [WEST,0]; //Sets West (Survivors) as hostile.
+EAST setFriend [WEST,1]; //Sets West (Survivors) as hostile.
 _target = [7019.1758, 7635.146, 1.1120623]; //Waypoint to Bank.
 
 //Spawn 25 AI's.
@@ -83,9 +82,9 @@ _squad8 addMagazine "20Rnd_762x51_DMR";
 _squad9 addWeapon "M4A3_CCO_EP1";
 _squad9 addMagazine "30Rnd_556x45_Stanag";
 _squad9 addMagazine "30Rnd_556x45_Stanag";
-_squad10 addWeapon "Remington870_lamp";
-_squad10 addMagazine "8Rnd_B_Beneli_Pellets";
-_squad10 addMagazine "8Rnd_B_Beneli_Pellets";
+_squad10 addWeapon "M4A1_Aim";
+_squad10 addMagazine "30Rnd_556x45_Stanag";
+_squad10 addMagazine "30Rnd_556x45_Stanag";
 _squad11 addWeapon "M4A3_CCO_EP1";
 _squad11 addMagazine "30Rnd_556x45_Stanag";
 _squad11 addMagazine "30Rnd_556x45_Stanag";
@@ -107,15 +106,15 @@ _squad16 addMagazine "30Rnd_556x45_Stanag";
 _squad17 addWeapon "M4A1_Aim";
 _squad17 addMagazine "30Rnd_556x45_Stanag";
 _squad17 addMagazine "30Rnd_556x45_Stanag";
-_squad18 addWeapon "Remington870_lamp";
-_squad18 addMagazine "8Rnd_B_Beneli_Pellets";
-_squad18 addMagazine "8Rnd_B_Beneli_Pellets";
-_squad19 addWeapon "Remington870_lamp";
-_squad19 addMagazine "8Rnd_B_Beneli_Pellets";
-_squad19 addMagazine "8Rnd_B_Beneli_Pellets";
-_squad20 addWeapon "Remington870_lamp";
-_squad20 addMagazine "8Rnd_B_Beneli_Pellets";
-_squad20 addMagazine "8Rnd_B_Beneli_Pellets";
+_squad18 addWeapon "M4A1_Aim";
+_squad18 addMagazine "30Rnd_556x45_Stanag";
+_squad18 addMagazine "30Rnd_556x45_Stanag";
+_squad19 addWeapon "M4A1_Aim";
+_squad19 addMagazine "30Rnd_556x45_Stanag";
+_squad19 addMagazine "30Rnd_556x45_Stanag";
+_squad20 addWeapon "M4A1_Aim";
+_squad20 addMagazine "30Rnd_556x45_Stanag";
+_squad20 addMagazine "30Rnd_556x45_Stanag";
 _squad21 addWeapon "M4A3_CCO_EP1";
 _squad21 addMagazine "30Rnd_556x45_Stanag";
 _squad21 addMagazine "30Rnd_556x45_Stanag";
