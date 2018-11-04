@@ -1,8 +1,8 @@
-private ["_meters","_debugBank","_robComplete"];
+private ["_meters","_robComplete"];
 
 _meters = player distance [7014.4897, 7645.3999, 1.6962879];
 
-if(_debugBank == 1) then {
+if(debugBank == 1) then {
 	systemChat "[DEBUG] Bank Zonecheck successfully executed.";
 };
 
