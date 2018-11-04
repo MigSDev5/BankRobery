@@ -1,5 +1,12 @@
 if (isServer) then {
 
+// Bank Marker
+_marker = createMarker ["_bank", [7018.75, 7655.4258]];
+_marker setMarkerText "Central Bank of Novy Sobor"; 
+_marker setMarkerType "mil_dot";
+_marker setMarkerColor "ColorOrange";
+_bank = _marker ;
+
 _vehicle_7 = objNull;
 if (true) then
 {
