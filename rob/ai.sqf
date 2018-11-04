@@ -17,7 +17,7 @@ if (suv_enabled) then {
 //Init (create center etc)
 _CENTER = createCenter east; //Creates Center.
 _aiGroup = createGroup east; //Creates a Group.
-EAST setFriend [WEST,1]; //Sets West (Survivors) as hostile.
+EAST setFriend [WEST,0]; //Sets West (Survivors) as hostile.
 _target = [7019.1758, 7635.146, 1.1120623]; //Waypoint to Bank.
 
 //Spawn 25 AI's.
